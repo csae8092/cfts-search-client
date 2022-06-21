@@ -38,9 +38,8 @@ search.addWidgets([
         templates: {
             empty: 'No results',
             item: `
-                <h3> {{ rec_id }}</h3>
-                <h4><a href="{{ id }}.html">{{ title }}</a></h4>
-                <h5>{{ project }}</h5>
+                <h3><a href="{{ resolver }}">{{ title }}</a></h3>
+                <h5><span class="badge badge-secondary">{{ project }}</span></h5>
                 <p>{{#helpers.snippet}}{ "attribute": "full_text" }{{/helpers.snippet}}</p>
             `
         }
@@ -65,6 +64,22 @@ search.addWidgets([
           checkbox: 'mr-2',
         }
     }),
+
+    instantsearch.widgets.refinementList({
+      container: '#refinement-list-project',
+      attribute: 'project',
+      searchable: true,
+      cssClasses: {
+        searchableInput: 'form-control form-control-sm mb-2 border-light-2',
+        searchableSubmit: 'd-none',
+        searchableReset: 'd-none',
+        showMore: 'btn btn-secondary btn-sm align-content-center',
+        list: 'list-unstyled',
+        count: 'badge badge-light bg-light-2 ml-2',
+        label: 'd-flex align-items-center text-capitalize',
+        checkbox: 'mr-2',
+      }
+  }),
 
     instantsearch.widgets.refinementList({
         container: '#refinement-list-persons',
@@ -147,10 +162,10 @@ search.addWidgets([
     instantsearch.widgets.sortBy({
       container: "#sort-by",
       items: [
-        { label: "Tag (aufsteigend)", value: "stb/sort/date:asc" },
-        { label: "Tag (absteigend)", value: "stb/sort/date:desc" },
-        { label: "Jahr (aufsteigend)", value: "stb/sort/year:asc" },
-        { label: "Jahr (absteigend)", value: "stb/sort/year:desc" },
+        { label: "Tag (aufsteigend)", value: "cfts/sort/date:asc" },
+        { label: "Tag (absteigend)", value: "cfts/sort/date:desc" },
+        { label: "Jahr (aufsteigend)", value: "cfts/sort/year:asc" },
+        { label: "Jahr (absteigend)", value: "cfts/sort/year:desc" },
       ],
       cssClasses: {
         select: 'custom-select'
