@@ -15,6 +15,13 @@ const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter({
     },
   });
 
+const projcetLabels = {
+  "sbt": "Schnitzler-Tagebuch",
+  "bahr-static": "Bahr-Schnitzler-Briefwechsel",
+  "legalkraus": "Rechtsakten Karl Kraus",
+  "akademie-static": "Edition Akademieprotokolle"
+};
+
 
 const searchClient = typesenseInstantsearchAdapter.searchClient;
 const search = instantsearch({
@@ -68,7 +75,14 @@ search.addWidgets([
     instantsearch.widgets.refinementList({
       container: '#refinement-list-project',
       attribute: 'project',
-      searchable: true,
+      searchable: false,
+      transformItems(items) {
+        console.log(items)
+        return items.map(item => ({
+          ...item,
+          highlighted: projcetLabels[item.value]
+        }));
+      },
       cssClasses: {
         searchableInput: 'form-control form-control-sm mb-2 border-light-2',
         searchableSubmit: 'd-none',
