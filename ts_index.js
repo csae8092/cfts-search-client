@@ -42,18 +42,59 @@ search.addWidgets([
 
     instantsearch.widgets.hits({
         container: '#hits',
+        transformItems(items) {
+          console.log(items)
+          return items.map(item => ({
+            ...item,
+            project: projcetLabels[item.project],
+            persons: [...new Set(item.persons)],
+            places: [...new Set(item.places)],
+            works: [...new Set(item.works)]
+          }));
+        },
         templates: {
-            empty: 'No results',
+            empty: 'Keine Ergebnisse',
             item: `
                 <h3><a href="{{ resolver }}">{{ title }}</a></h3>
-                <h5><span class="badge badge-secondary">{{ project }}</span></h5>
+                <h5><span class="badge badge-primary">{{ project }}</span></h5>
+                <div>
+                {{#persons}}
+                <span class="badge badge-secondary">{{ . }}</span>
+                {{/persons}}
+                </div>
+                <div>
+                {{#places}}
+                <span class="badge badge-info">{{ . }}</span>
+                {{/places}}
+                </div>
+                {{#works}}
+                <span class="badge badge-success">{{ . }}</span>
+                {{/works}}
+                </div>
                 <p>{{#helpers.snippet}}{ "attribute": "full_text" }{{/helpers.snippet}}</p>
+                
             `
         }
     }),
 
     instantsearch.widgets.stats({
-        container: '#stats-container'
+        container: '#stats-container',
+        templates: {
+          text: `
+            {{#areHitsSorted}}
+              {{#hasNoSortedResults}}Keine Treffer{{/hasNoSortedResults}}
+              {{#hasOneSortedResults}}1 Treffer{{/hasOneSortedResults}}
+              {{#hasManySortedResults}}{{#helpers.formatNumber}}{{nbSortedHits}}{{/helpers.formatNumber}} Treffer {{/hasManySortedResults}}
+              aus {{#helpers.formatNumber}}{{nbHits}}{{/helpers.formatNumber}}
+            {{/areHitsSorted}}
+            {{^areHitsSorted}}
+              {{#hasNoResults}}Keine Treffer{{/hasNoResults}}
+              {{#hasOneResult}}1 Treffer{{/hasOneResult}}
+              {{#hasManyResults}}{{#helpers.formatNumber}}{{nbHits}}{{/helpers.formatNumber}} Treffer{{/hasManyResults}}
+            {{/areHitsSorted}}
+            gefunden in {{processingTimeMS}}ms
+          `,
+        }
     }),
 
     instantsearch.widgets.refinementList({
