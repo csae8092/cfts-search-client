@@ -77,7 +77,6 @@ search.addWidgets([
       attribute: 'project',
       searchable: false,
       transformItems(items) {
-        console.log(items)
         return items.map(item => ({
           ...item,
           highlighted: projcetLabels[item.value]
@@ -157,13 +156,13 @@ search.addWidgets([
 
     instantsearch.widgets.currentRefinements({
       container: '#current-refinements',
+      excludedAttributes: ['project'],
       cssClasses: {
         delete: 'btn btn-primary',
         label: 'badge'
       }
     })
 ]);
-
 
 
 search.addWidgets([
