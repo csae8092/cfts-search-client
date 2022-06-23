@@ -19,7 +19,8 @@ const projcetLabels = {
   "sbt": "Schnitzler-Tagebuch",
   "bahr-static": "Bahr-Schnitzler-Briefwechsel",
   "legalkraus": "Rechtsakten Karl Kraus",
-  "akademie-static": "Edition Akademieprotokolle"
+  "akademie-static": "Edition Akademieprotokolle",
+  "thun-static": "Thun-Korrespondenz"
 };
 
 
@@ -71,8 +72,12 @@ search.addWidgets([
                 <span class="badge badge-success">{{ . }}</span>
                 {{/works}}
                 </div>
+                </div>
+                {{#keywords}}
+                <span class="badge badge-success">{{ . }}</span>
+                {{/keywords}}
+                </div>
                 <p>{{#helpers.snippet}}{ "attribute": "full_text" }{{/helpers.snippet}}</p>
-                
             `
         }
     }),
@@ -112,6 +117,21 @@ search.addWidgets([
           checkbox: 'mr-2',
         }
     }),
+    instantsearch.widgets.refinementList({
+      container: '#refinement-list-keywords',
+      attribute: 'keywords',
+      searchable: true,
+      cssClasses: {
+        searchableInput: 'form-control form-control-sm mb-2 border-light-2',
+        searchableSubmit: 'd-none',
+        searchableReset: 'd-none',
+        showMore: 'btn btn-secondary btn-sm align-content-center',
+        list: 'list-unstyled',
+        count: 'badge badge-light bg-light-2 ml-2',
+        label: 'd-flex align-items-center text-capitalize',
+        checkbox: 'mr-2',
+      }
+  }),
 
     instantsearch.widgets.refinementList({
       container: '#refinement-list-project',
