@@ -20,7 +20,8 @@ const projcetLabels = {
   "bahr-static": "Bahr-Schnitzler-Briefwechsel",
   "legalkraus": "Rechtsakten Karl Kraus",
   "akademie-static": "Edition Akademieprotokolle",
-  "thun-static": "Thun-Korrespondenz"
+  "thun-static": "Thun-Korrespondenz",
+  "abcd-db": "Anton Bruckner Chronologie Datenbank
 };
 
 
