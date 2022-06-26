@@ -22,7 +22,8 @@ const projcetLabels = {
   "akademie-static": "Edition Akademieprotokolle",
   "thun-static": "Thun-Korrespondenz",
   "abcd-db": "Anton Bruckner Chronologie Datenbank",
-  "ablo": "Anton Bruckner-Lexikon online"
+  "ablo": "Anton Bruckner-Lexikon online",
+  "ficker-briefe": "Ludwig Ficker Gesamtbriefwechsel"
 };
 
 
