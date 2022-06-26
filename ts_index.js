@@ -21,7 +21,8 @@ const projcetLabels = {
   "legalkraus": "Rechtsakten Karl Kraus",
   "akademie-static": "Edition Akademieprotokolle",
   "thun-static": "Thun-Korrespondenz",
-  "abcd-db": "Anton Bruckner Chronologie Datenbank"
+  "abcd-db": "Anton Bruckner Chronologie Datenbank",
+  "ablo": "Anton Bruckner-Lexikon online"
 };
 
 
