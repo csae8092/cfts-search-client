@@ -23,7 +23,8 @@ const projcetLabels = {
   "thun-static": "Thun-Korrespondenz",
   "abcd-db": "Anton Bruckner Chronologie Datenbank",
   "ablo": "Anton Bruckner-Lexikon online",
-  "ficker-briefe": "Ludwig Ficker Gesamtbriefwechsel"
+  "ficker-briefe": "Ludwig Ficker Gesamtbriefwechsel",
+  "mrp": "Die Ministerratsprotokolle 1818-1918"
 };
 
 
