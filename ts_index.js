@@ -25,7 +25,8 @@ const projcetLabels = {
   "ablo": "Anton Bruckner-Lexikon online",
   "ficker-briefe": "Ludwig Ficker Gesamtbriefwechsel",
   "mrp": "Die Ministerratsprotokolle 1848-1918",
-  "staribacher": "Tagebuch Josef Staribacher: Digitale Edition"
+  "staribacher": "Tagebuch Josef Staribacher: Digitale Edition",
+  "fackel-texte": "Die Texte der 'Fackel'"
 };
 
 
