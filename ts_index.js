@@ -26,7 +26,8 @@ const projcetLabels = {
   "ficker-briefe": "Ludwig Ficker Gesamtbriefwechsel",
   "mrp": "Die Ministerratsprotokolle 1848-1918",
   "staribacher": "Tagebuch Josef Staribacher: Digitale Edition",
-  "fackel-texte": "Die Texte der 'Fackel'"
+  "fackel-texte": "Die Texte der 'Fackel'",
+  "schnitzler-briefe": "Schnitzler-Briefe"
 };
 
 
