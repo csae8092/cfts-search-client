@@ -27,7 +27,8 @@ const projcetLabels = {
   "mrp": "Die Ministerratsprotokolle 1848-1918",
   "staribacher": "Tagebuch Josef Staribacher: Digitale Edition",
   "fackel-texte": "Die Texte der 'Fackel'",
-  "schnitzler-briefe": "Schnitzler-Briefe"
+  "schnitzler-briefe": "Schnitzler-Briefe",
+  "oebl": "Österreichisches Biographisches Lexikon",
 };
 
 
@@ -143,7 +144,7 @@ search.addWidgets([
     instantsearch.widgets.refinementList({
       container: '#refinement-list-project',
       attribute: 'project',
-      searchable: false,
+      searchable: true,
       transformItems(items) {
         return items.map(item => ({
           ...item,
