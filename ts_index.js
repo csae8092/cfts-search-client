@@ -30,6 +30,7 @@ const projcetLabels = {
   "schnitzler-briefe": "Schnitzler-Briefe",
   "oebl": "Österreichisches Biographisches Lexikon",
   "pollaczek": "Clara Katharina Pollaczek – Arthur Schnitzler und ich",
+  "freud-edition": "Sigmund Freuds Werke",
 };
 
 
