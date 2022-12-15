@@ -31,6 +31,7 @@ const projcetLabels = {
   "oebl": "Österreichisches Biographisches Lexikon",
   "pollaczek": "Clara Katharina Pollaczek – Arthur Schnitzler und ich",
   "freud-edition": "Sigmund Freuds Werke",
+  "amp": "Auden-Musulin-Papers",
 };
 
 
