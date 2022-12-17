@@ -32,6 +32,7 @@ const projcetLabels = {
   "pollaczek": "Clara Katharina Pollaczek – Arthur Schnitzler und ich",
   "freud-edition": "Sigmund Freuds Werke",
   "amp": "Auden-Musulin-Papers",
+  "emt": "Kaiserin Eleonora Magdalena Korrespondenz",
 };
 
 
