@@ -33,6 +33,7 @@ const projcetLabels = {
   "freud-edition": "Sigmund Freuds Werke",
   "amp": "Auden-Musulin-Papers",
   "emt": "Kaiserin Eleonora Magdalena Korrespondenz",
+  "oeml": "Österreichisches Musiklexikon Online",
 };
 
 
