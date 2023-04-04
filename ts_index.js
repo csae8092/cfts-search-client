@@ -34,6 +34,7 @@ const projcetLabels = {
   "amp": "Auden-Musulin-Papers",
   "emt": "Kaiserin Eleonora Magdalena Korrespondenz",
   "oeml": "Österreichisches Musiklexikon Online",
+  "hsl": "Hanslick Online",
 };
 
 
