@@ -16,6 +16,7 @@ const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter({
   });
 
 const projcetLabels = {
+  "Schnitzler-Zeitungen": "Schnitzler-Zeitungen",  
   "sbt": "Schnitzler-Tagebuch",
   "bahr-static": "Bahr-Schnitzler-Briefwechsel",
   "legalkraus": "Rechtsakten Karl Kraus",
