@@ -16,9 +16,13 @@ const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter({
   });
 
 const projcetLabels = {
-  "Schnitzler-Zeitungen": "Schnitzler-Zeitungen",  
+  "schnitzler-briefe": "Schnitzler-Briefe",
+  "Schnitzler-Zeitungen": "Schnitzler-Zeitungen",
+  "schnitzler-kino": "Schnitzler-Kino",
+  "rita": "Reading in the Alps",
   "sbt": "Schnitzler-Tagebuch",
   "bahr-static": "Bahr-Schnitzler-Briefwechsel",
+  "hbtv": "Bahr-Textverzeichnis",
   "legalkraus": "Rechtsakten Karl Kraus",
   "akademie-static": "Edition Akademieprotokolle",
   "thun-static": "Thun-Korrespondenz",
@@ -28,7 +32,6 @@ const projcetLabels = {
   "mrp": "Die Ministerratsprotokolle 1848-1918",
   "staribacher": "Tagebuch Josef Staribacher: Digitale Edition",
   "fackel-texte": "Die Texte der 'Fackel'",
-  "schnitzler-briefe": "Schnitzler-Briefe",
   "oebl": "Österreichisches Biographisches Lexikon",
   "pollaczek": "Clara Katharina Pollaczek – Arthur Schnitzler und ich",
   "freud-edition": "Sigmund Freuds Werke",
@@ -153,6 +156,7 @@ search.addWidgets([
       container: '#refinement-list-project',
       attribute: 'project',
       searchable: true,
+      limit: 100,
       transformItems(items) {
         return items.map(item => ({
           ...item,
