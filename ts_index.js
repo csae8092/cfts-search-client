@@ -18,6 +18,7 @@ const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter({
 const projcetLabels = {
   "schnitzler-briefe": "Schnitzler-Briefe",
   "Schnitzler-Zeitungen": "Schnitzler-Zeitungen",
+  "Schnitzler-Mikrofilme": "Schnitzler-Mikrofilme",  
   "schnitzler-kino": "Schnitzler-Kino",
   "rita": "Reading in the Alps",
   "sbt": "Schnitzler-Tagebuch",
