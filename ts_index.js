@@ -16,7 +16,7 @@ const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter({
   });
 
 const projcetLabels = {
-  "grundbuecher": "Wiener Grundbücher (1438–1473)"
+  "grundbuecher": "Wiener Grundbücher (1438–1473)",
   "schnitzler-briefe": "Schnitzler-Briefe",
   "Schnitzler-Zeitungen": "Schnitzler-Zeitungen",
   "Schnitzler-Mikrofilme": "Schnitzler-Mikrofilme",  
