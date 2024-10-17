@@ -16,6 +16,7 @@ const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter({
   });
 
 const projcetLabels = {
+  "tillich-lectures": "Tillich Lectures",
   "grundbuecher": "Wiener Grundbücher (1438–1473)",
   "schnitzler-briefe": "Schnitzler-Briefe",
   "Schnitzler-Zeitungen": "Schnitzler-Zeitungen",
