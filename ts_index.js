@@ -16,6 +16,7 @@ const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter({
   });
 
 const projcetLabels = {
+  "gtrans": "Die Große Transformation",  
   "tillich-lectures": "Tillich Lectures",
   "grundbuecher": "Wiener Grundbücher (1438–1473)",
   "schnitzler-briefe": "Schnitzler-Briefe",
