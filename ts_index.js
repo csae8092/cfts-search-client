@@ -16,6 +16,7 @@ const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter({
   });
 
 const projcetLabels = {
+  "tillich-briefe": "Tillich Briefe",
   "nbr-graz": "Digitale Edition Grazer Nuntiaturberichte (1580-[1602])",  
   "gtrans": "Die Große Transformation",  
   "tillich-lectures": "Tillich Lectures",
