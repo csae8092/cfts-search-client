@@ -16,6 +16,7 @@ const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter({
   });
 
 const projcetLabels = {
+  "nbr-pius-xi": "Nuntiatur Pius XI",
   "tillich-briefe": "Tillich Briefe",
   "nbr-graz": "Digitale Edition Grazer Nuntiaturberichte (1580-[1602])",  
   "gtrans": "Die Große Transformation",  
